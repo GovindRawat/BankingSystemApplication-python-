@@ -74,7 +74,7 @@ class Dashboard(customtkinter.CTk):
                   command=self.personal_details).pack(anchor="center", ipady=5, pady=(16, 0))
 
         self.deposit_img_data = Image.open("Images/deposit (1).png")
-        self.deposit_img = CTkImage(dark_image=self.deposit_img_data, light_image=self.deposit_img_data)
+        self.deposit_img = CTKImage(dark_image=self.deposit_img_data, light_image=self.deposit_img_data)
         CTkButton(master=self.sidebar_frame, image=self.deposit_img, text="Deposit", text_color=colors[2],
                   fg_color="transparent",
                   font=("Arial Bold", 14), hover_color=colors[0], anchor="w", command=self.deposit).pack(
